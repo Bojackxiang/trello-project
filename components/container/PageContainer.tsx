@@ -1,13 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-const PageContainer = ({children}: {
-  children: React.ReactNode;
-}) => {
+const PageContainer = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="h-full flex flex-col justify-center items-center">
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default PageContainer
+export default PageContainer;

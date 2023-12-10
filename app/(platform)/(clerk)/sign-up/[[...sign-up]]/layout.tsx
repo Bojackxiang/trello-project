@@ -5,7 +5,7 @@ export default function SignUpLayout({
 }) {
   return (
     <div className="h-full flex flex-col justify-center items-center ">
-        {children}
+      {children}
     </div>
   );
 }

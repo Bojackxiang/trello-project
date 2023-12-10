@@ -1,14 +1,13 @@
-"use client";
+'use client';
 
-import { Menu } from "lucide-react";
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { Menu } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent } from "@/components/ui/sheet";
-import SideBar from "./SideBar";
-import { useMobileSidebar } from "@/hook/use-mobile-sidebar";
-
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent } from '@/components/ui/sheet';
+import SideBar from './SideBar';
+import { useMobileSidebar } from '@/hook/use-mobile-sidebar';
 
 export const MobileSidebar = () => {
   const pathname = usePathname();
@@ -41,15 +40,10 @@ export const MobileSidebar = () => {
         <Menu className="h-4 w-4" />
       </Button>
       <Sheet open={isOpen} onOpenChange={onClose}>
-        <SheetContent
-          side="left"
-          className="p-2 pt-10"
-        >
-          <SideBar
-            storageKey="t-sidebar-mobile-state"
-          />
+        <SheetContent side="left" className="p-2 pt-10">
+          <SideBar storageKey="t-sidebar-mobile-state" />
         </SheetContent>
       </Sheet>
     </>
-  )
-}
+  );
+};

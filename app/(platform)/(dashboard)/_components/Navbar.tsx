@@ -1,11 +1,10 @@
-import { Logo } from '@/components/Logo'
-import { OrganizationSwitcher, UserButton } from '@clerk/nextjs'
-import React from 'react'
-import { MobileSidebar } from './MobileSidebar'
-import { Button } from '@/components/ui/button'
+import { Logo } from '@/components/Logo';
+import { OrganizationSwitcher, UserButton } from '@clerk/nextjs';
+import React from 'react';
+import { MobileSidebar } from './MobileSidebar';
+import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
-
   return (
     <nav className="fixed z-50 top-0 px-4 w-full h-14 border-b shadow-sm bg-white flex items-center">
       <MobileSidebar />
@@ -33,9 +32,9 @@ const Navbar = () => {
           appearance={{
             elements: {
               rootBox: {
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
               },
             },
           }}
@@ -47,13 +46,13 @@ const Navbar = () => {
               avatarBox: {
                 height: 30,
                 width: 30,
-              }
-            }
+              },
+            },
           }}
         />
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

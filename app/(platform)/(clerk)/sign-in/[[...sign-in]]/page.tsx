@@ -1,10 +1,12 @@
-import { SignIn } from '@clerk/nextjs'
-import React from 'react'
+import { SignIn } from '@clerk/nextjs';
+import React from 'react';
 
 const SignInPage = () => {
-  return <div className='-translate-y-40'>
-    <SignIn/>
-  </div>
-}
+  return (
+    <div className="-translate-y-40">
+      <SignIn />
+    </div>
+  );
+};
 
-export default SignInPage
+export default SignInPage;
