@@ -6,7 +6,6 @@ const DashboardLayout = ({ children }: PropsWithChildren) => {
     <div className="h-full">
       <Navbar />
       {children}
-      <></>
     </div>
   );
 };

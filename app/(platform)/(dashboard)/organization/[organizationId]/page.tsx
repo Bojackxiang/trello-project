@@ -6,6 +6,7 @@ const OrganizationIdPage = () => {
 
   return (
     <PageContainer>
+      content
     </PageContainer>
   )
 }
